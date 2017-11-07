@@ -2,6 +2,7 @@
 
 namespace LaravelNews\Presets\BootstrapFour;
 
+use Illuminate\Container\Container;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Arr;
 use Illuminate\Foundation\Console\Presets\Preset;
@@ -19,7 +20,8 @@ class BootstrapPreset extends Preset
 
     public static function installAuth()
     {
-        // noop
+        static::install();
+        static::scaffoldAuth();
     }
 
     protected static function updatePackageArray(array $packages)
@@ -52,5 +54,25 @@ class BootstrapPreset extends Preset
     {
         copy(__DIR__ . '/bootstrap-stubs/sass/_variables.scss', resource_path('assets/sass/_variables.scss'));
         copy(__DIR__ . '/bootstrap-stubs/sass/app.scss', resource_path('assets/sass/app.scss'));
+    }
+
+    protected static function scaffoldAuth()
+    {
+        file_put_contents(app_path('Http/Controllers/HomeController.php'), static::compileControllerStub());
+        file_put_contents(
+            base_path('routes/web.php'),
+            "Auth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home');\n\n",
+            FILE_APPEND
+        );
+        (new Filesystem)->copyDirectory(__DIR__.'/bootstrap-stubs/views', resource_path('views'));
+    }
+
+    protected static function compileControllerStub()
+    {
+        return str_replace(
+            '{{namespace}}',
+            Container::getInstance()->getNamespace(),
+            file_get_contents(__DIR__.'/bootstrap-stubs/controllers/HomeController.stub')
+        );
     }
 }
