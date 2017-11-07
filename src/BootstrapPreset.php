@@ -50,7 +50,7 @@ class BootstrapPreset extends Preset
      */
     protected static function updateSass()
     {
-        copy(__DIR__ . '/bootstrap-stubs/sass/_variables.sass', resource_path('assets/sass/_variables.sass'));
-        copy(__DIR__ . '/bootstrap-stubs/sass/app.sass', resource_path('assets/sass/app.sass'));
+        copy(__DIR__ . '/bootstrap-stubs/sass/_variables.scss', resource_path('assets/sass/_variables.scss'));
+        copy(__DIR__ . '/bootstrap-stubs/sass/app.scss', resource_path('assets/sass/app.scss'));
     }
 }
