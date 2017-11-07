@@ -1,6 +1,6 @@
 # Laravel 5.5.x Frontend preset for Boostrap 4
 
-A Laravel frontend preset for [Bootstrap 4](http://getbootstrap.com/) (Beta) the next major version of Bootstrap.
+A Laravel frontend preset for [Bootstrap 4](http://getbootstrap.com/) (Beta), the next major version of Bootstrap.
 
 Current version: `^4.0.0-beta.2`
 
@@ -13,19 +13,19 @@ composer require laravelnews/laravel-twbs4
 ```
 The package will automatically register it's service provider.
 
-Install the preset by running the `preset` command if you only want to update the basic CSS and JavaScript files:
+Install the basic preset to only update the CSS and JavaScript files:
 
 ```bash
 php artisan preset bootstrap4
 ```
 
-Or if you want to install everything, including auth views that use Bootstrap 4 markup:
+Or if you want to install everything, including auth views:
 
 ```bash
 php artisan preset bootstrap-auth
 ```
 
-Update NPM packages and build the CSS/JavaScript:
+Next, update NPM packages and build the CSS/JavaScript:
 
 ```bash
 yarn && yarn dev
@@ -37,11 +37,11 @@ Or via NPM:
 npm install && npm run dev
 ```
 
-**Important**: Make sure you have a backup of your code you use this on an existing project. The commands copy/replace views, CSS, and JavaScript resources.
+**Important**: Make sure you have a backup of your code. The presets update `package.json`, and replace views, CSS, and JavaScript.
 
 ### Variables
 
-The Bootstrap 4 presets include the same familiar `resources/assets/scss/_variables.scss` file, with some updated values to match the current `3.x` version that ships with Laravel. Feel free to add more here if you find any that are missing.
+The Bootstrap 4 presets include the same familiar `resources/assets/scss/_variables.scss` file, with some updated values to match Bootstrap 4 variable changes. This preset looks similar to the current `3.x` version that ships with Laravel, but isn't identical.
 
 Here are the variables ported over thus far:
 
