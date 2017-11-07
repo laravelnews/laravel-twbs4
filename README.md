@@ -13,13 +13,13 @@ composer require laravelnews/laravel-twbs4
 ```
 The package will automatically register it's service provider.
 
-Install the preset by running the `preset` command:
+Install the preset by running the `preset` command if you only want to update the basic CSS and JavaScript files:
 
 ```bash
 php artisan preset bootstrap4
 ```
 
-If you want to install the preset and auth views:
+Or if you want to install everything, including auth views that use Bootstrap 4 markup:
 
 ```bash
 php artisan preset bootstrap-auth
