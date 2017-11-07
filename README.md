@@ -1,4 +1,4 @@
-# Laravel 5.5.x Frontend preset for Boostrap 4 (Beta)
+# Laravel 5.5.x Frontend preset for Boostrap 4
 
 A Laravel frontend preset for [Bootstrap 4](http://getbootstrap.com/) (Beta) the next major version of Bootstrap.
 
