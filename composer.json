@@ -22,7 +22,7 @@
         },
         "laravel": {
             "providers": [
-                "LaravelNews\\Presets\\BootstrapFour\\"
+                "LaravelNews\\Presets\\BootstrapFour\\BootstrapPresetServiceProvider"
             ]
         }
     }
