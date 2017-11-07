@@ -1,4 +1,4 @@
-# Laravel 5.5.x Frontend preset for Boostrap 4
+# Laravel 5.5 Frontend Preset for Boostrap 4
 
 <a href="https://laravel-news.com/bootstrap-4-laravel-preset/">
     <img src="/screenshots/bootstrap-4-preset.png" width="1200" />
