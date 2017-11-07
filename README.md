@@ -77,6 +77,14 @@ $input-border-color: lighten($text-color, 40%);
 $input-placeholder-color: lighten($text-color, 30%);
 ```
 
+## Screenshots
+
+![Login](/screenshots/bootstrap-4-login.png)
+
+![Register](/screenshots/bootstrap-4-register.png)
+
+![Register](/screenshots/bootstrap-4-validation.png)
+
 ## License
 
 The MIT License (MIT). See [License File](LICENSE.md) for more information.
