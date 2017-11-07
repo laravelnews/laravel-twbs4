@@ -1,5 +1,9 @@
 # Laravel 5.5.x Frontend preset for Boostrap 4
 
+<a href="https://laravel-news.com/bootstrap-4-laravel-preset/">
+    <img src="/screenshots/bootstrap-4-preset.png" width="1200" />
+</a>
+
 A Laravel frontend preset for [Bootstrap 4](http://getbootstrap.com/) (Beta), the next major version of Bootstrap.
 
 Current version: `^4.0.0-beta.2`
