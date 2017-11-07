@@ -61,7 +61,7 @@ class BootstrapPreset extends Preset
         file_put_contents(app_path('Http/Controllers/HomeController.php'), static::compileControllerStub());
         file_put_contents(
             base_path('routes/web.php'),
-            "Auth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home');\n\n",
+            "\nAuth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home');\n\n",
             FILE_APPEND
         );
         (new Filesystem)->copyDirectory(__DIR__.'/bootstrap-stubs/views', resource_path('views'));
