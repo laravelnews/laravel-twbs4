@@ -16,16 +16,16 @@
                     <form role="form" method="POST" action="{{ url('/password/email') }}">
                         {!! csrf_field() !!}
 
-                        <div class="form-group row{{ $errors->has('email') ? ' has-error' : '' }}">
+                        <div class="form-group row">
                             <label class="col-md-4 col-form-label text-right">E-Mail Address</label>
 
                             <div class="col-md-6">
-                                <input type="email" class="form-control" name="email" value="{{ old('email') }}">
+                                <input type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}">
 
                                 @if ($errors->has('email'))
-                                    <span class="form-text text-muted">
-                                    <strong>{{ $errors->first('email') }}</strong>
-                                </span>
+                                    <div class="invalid-feedback">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </div>
                                 @endif
                             </div>
                         </div>
