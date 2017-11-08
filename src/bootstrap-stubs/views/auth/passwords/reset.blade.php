@@ -13,9 +13,9 @@
                         <input type="hidden" name="token" value="{{ $token }}">
 
                         <div class="form-group row">
-                            <label class="col-md-4 col-form-label text-right">E-Mail Address</label>
+                            <label class="col-lg-4 col-form-label text-lg-right">E-Mail Address</label>
 
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <input
                                         type="email"
                                         class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
@@ -31,9 +31,9 @@
                         </div>
 
                         <div class="form-group row">
-                            <label class="col-md-4 col-form-label text-right">Password</label>
+                            <label class="col-lg-4 col-form-label text-lg-right">Password</label>
 
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <input
                                         type="password"
                                         class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
@@ -48,8 +48,8 @@
                         </div>
 
                         <div class="form-group row">
-                            <label class="col-md-4 col-form-label text-right">Confirm Password</label>
-                            <div class="col-md-6">
+                            <label class="col-lg-4 col-form-label text-lg-right">Confirm Password</label>
+                            <div class="col-lg-6">
                                 <input
                                         type="password"
                                         class="form-control{{ $errors->has('password_confirmation') ? ' is-invalid' : '' }}"
@@ -64,7 +64,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="col-lg-6 offset-lg-4">
                                 <button type="submit" class="btn btn-primary">
                                     Reset Password
                                 </button>

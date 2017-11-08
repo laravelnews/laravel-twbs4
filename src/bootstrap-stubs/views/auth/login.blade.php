@@ -11,9 +11,9 @@
                         {{ csrf_field() }}
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-right">E-Mail Address</label>
+                            <label for="email" class="col-lg-4 col-form-label text-lg-right">E-Mail Address</label>
 
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <input
                                         id="email"
                                         type="email"
@@ -33,9 +33,9 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-right">Password</label>
+                            <label for="password" class="col-lg-4 col-form-label text-lg-right">Password</label>
 
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <input
                                         id="password"
                                         type="password"
@@ -53,7 +53,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="col-lg-6 offset-lg-4">
                                 <div class="form-check">
                                     <label class="form-check-label">
                                         <input type="checkbox" class="form-check-input" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
@@ -63,7 +63,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-8 offset-md-4">
+                            <div class="col-lg-8 offset-lg-4">
                                 <button type="submit" class="btn btn-primary">
                                     Login
                                 </button>
