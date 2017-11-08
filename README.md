@@ -26,7 +26,7 @@ php artisan preset bootstrap4
 Or if you want to install everything, including auth views:
 
 ```bash
-php artisan preset bootstrap-auth
+php artisan preset bootstrap4-auth
 ```
 
 Next, update NPM packages and build the CSS/JavaScript:
