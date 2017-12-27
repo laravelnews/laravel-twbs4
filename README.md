@@ -43,6 +43,21 @@ npm install && npm run dev
 
 **Important**: Make sure you have a backup of your code. The presets update `package.json`, and replace views, CSS, and JavaScript.
 
+### jQuery Slim
+
+Bootstrap's [download](https://getbootstrap.com/docs/4.0/getting-started/download/) page includes jQuery slim. If you need `$.ajax`, effects, and deprecated methods, you can change the following line in `resources/assets/js/boostrap.js` to use the full jQuery installation:
+
+```js
+window.$ = window.jQuery = require('jquery/dist/jquery.slim');
+```
+
+With full jQuery:
+
+```js
+// Full jQuery
+window.$ = window.jQuery = require('jquery');
+```
+
 ### Variables
 
 The Bootstrap 4 presets include the same familiar `resources/assets/scss/_variables.scss` file, with some updated values to match Bootstrap 4 variable changes. This preset looks similar to the current `3.x` version that ships with Laravel, but isn't identical.
