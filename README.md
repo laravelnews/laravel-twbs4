@@ -4,9 +4,9 @@
     <img src="/screenshots/bootstrap-4-preset.png" width="1200" />
 </a>
 
-A Laravel frontend preset for [Bootstrap 4](http://getbootstrap.com/) (final beta), the next major version of Bootstrap.
+A Laravel frontend preset for [Bootstrap 4](http://getbootstrap.com/), the next major version of Bootstrap.
 
-Current version: `^4.0.0-beta.3`. To learn more about updating to the latest major release of Bootstrap, read the [Beta 3 Changes](https://getbootstrap.com/docs/4.0/migration/#beta-3-changes). Beta 3 is the last v4 beta, and no breaking changes are expected between beta 3 and the final stable release of Bootstrap 4.
+Current version: `^4.0.0`. To learn more about updating to the latest major release of Bootstrap, read the [Migrating to v4](https://getbootstrap.com/docs/4.0/migration/) documentation.
 
 ## Installation
 
