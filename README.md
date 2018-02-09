@@ -10,6 +10,8 @@ Current version is the stable release of `^4.0.0`. To learn more about updating 
 
 ## Installation
 
+**Note: Laravel 5.6 includes Bootstrap 4, this preset is for Laravel 5.5 LTS**
+
 You can install this package via composer:
 
 ```bash
