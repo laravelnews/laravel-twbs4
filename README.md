@@ -1,5 +1,7 @@
 # Laravel 5.5 Frontend Preset for Boostrap 4
 
+**Note: Laravel 5.6 includes Bootstrap 4, this preset is only needed for Laravel <= Laravel 5.5 LTS**
+
 <a href="https://laravel-news.com/bootstrap-4-laravel-preset/">
     <img src="/screenshots/bootstrap-4-preset.png" width="1200" />
 </a>
@@ -9,8 +11,6 @@ A Laravel frontend preset for [Bootstrap 4](http://getbootstrap.com/), the lates
 Current version is the stable release of `^4.0.0`. To learn more about updating to the latest major release of Bootstrap, read the [Migrating to v4](https://getbootstrap.com/docs/4.0/migration/) documentation.
 
 ## Installation
-
-**Note: Laravel 5.6 includes Bootstrap 4, this preset is for Laravel 5.5 LTS**
 
 You can install this package via composer:
 
