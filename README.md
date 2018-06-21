@@ -2,6 +2,8 @@
 
 **Note: Laravel 5.6 includes Bootstrap 4, this preset is only needed for Laravel <= Laravel 5.5 LTS**
 
+If you are upgrading a Laravel <= 5.5 application, remove this preset (`laravelnews/laravel-twbs4`) from your `composer.json` file. Laravel 5.6 includes Bootstrap 4, and this preset isn't necessary. 
+
 <a href="https://laravel-news.com/bootstrap-4-laravel-preset/">
     <img src="/screenshots/bootstrap-4-preset.png" width="1200" />
 </a>
